@@ -16,7 +16,7 @@ findomain -t $1 -q >> lista.txt
 
 echo "----------------------"
 echo $(date)
-Echo "Executando Sort Uniq -> Httpx"
+echo "Executando Sort Uniq -> Httpx"
 echo "----------------------" 
 sort lista.txt | uniq -c | awk '{print $2}' | httpx > lista_unica_simples.txt
 
